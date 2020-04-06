@@ -62,13 +62,13 @@
 %%
 %% Bug fixes and changes: at end of file
 
-% TeX programming: Vytas Statulevicius, VTeX, Lithuania,
-% TeX programming: Deimantas Galcius, VTeX, Lithuania,
+% TeX programming: Vytas Statulevicius, VTeX, Lithuania.
+% TeX programming: Deimantas Galcius, VTeX, Lithuania.
+% TeX programming: Edgaras Sakuras, VTeX, Lithuania.
 % Requires Latex2e, ver.2000.06
 
-
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{imsart}[2010/04/27 driver class for package imsart.sty]
+\ProvidesClass{imsart}[2020/04/06 driver class for package imsart.sty]
 
 % layout options:
 
@@ -80,12 +80,10 @@
   \PassOptionsToClass{11pt,oneside,leqno}{article}
   \PassOptionsToPackage{leqno}{amsmath}}
 
-
 % set various options for different journals:
 \DeclareOption{generic}{%
   \PassOptionsToClass{10pt,oneside}{article}
 }
-
 
 \DeclareOption{ps}{%
   \PassOptionsToClass{10pt,oneside}{article}
@@ -109,7 +107,6 @@
   \PassOptionsToPackage{leqno}{amsmath}
 }
 
-
 \DeclareOption{aap}{%
   \PassOptionsToClass{11pt,oneside,leqno}{article}
   \PassOptionsToPackage{leqno}{amsmath}
@@ -130,7 +127,6 @@
   \PassOptionsToPackage{leqno}{amsmath}
 }
 
-
 \DeclareOption{sts}{%
   \PassOptionsToClass{11pt,oneside,leqno}{article}
   \PassOptionsToPackage{leqno}{amsmath}
@@ -145,7 +141,6 @@
   \PassOptionsToPackage{fleqn}{amsmath}
   \PassOptionsToPackage{numbers,sort&compress}{natbib}
 }
-
 
 \DeclareOption{bjps}{
   \PassOptionsToClass{11pt,twoside}{article}
