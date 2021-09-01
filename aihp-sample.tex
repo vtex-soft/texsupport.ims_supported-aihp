@@ -3,7 +3,7 @@
 %% Packages
 \RequirePackage{amsthm,amsmath,amsfonts,amssymb}
 \RequirePackage[numbers]{natbib}
-%\RequirePackage[french]{babel}
+%\RequirePackage[french]{babel}%% uncomment this if article is written in french
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
 \RequirePackage{graphicx}
 
@@ -17,12 +17,12 @@
 %\numberwithin{equation}{section}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
-%% For Axiom, Claim, Corollary, Hypothezis, %%
+%% For Axiom, Claim, Corollary, Hypothesis, %%
 %% Lemma, Theorem, Proposition              %%
 %% use \theoremstyle{plain}                 %%
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\theoremstyle{plain}
+\theoremstyle{plain}
 \newtheorem{axiom}{Axiom}
 \newtheorem{claim}[axiom]{Claim}
 \newtheorem{theorem}{Theorem}[section]
@@ -53,10 +53,10 @@
 %\thankstext{T1}{A sample additional note to the title.}
 
 \begin{aug}
-\author[A]{\fnms{First} \snm{Author}\ead[label=e1]{first@somewhere.com}},
-\author[B]{\fnms{Second} \snm{Author}\ead[label=e2,mark]{second@somewhere.com}}
+\author[A]{\inits{F.}\fnms{First} \snm{Author}\ead[label=e1]{first@somewhere.com}},
+\author[B]{\inits{S.}\fnms{Second} \snm{Author}\ead[label=e2,mark]{second@somewhere.com}}
 \and
-\author[B]{\fnms{Third} \snm{Author}\ead[label=e3,mark]{third@somewhere.com}}
+\author[B]{\inits{T.}\fnms{Third} \snm{Author}\ead[label=e3,mark]{third@somewhere.com}\ead[label=u1,url]{www.foo.com}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Addresses                                %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,7 +66,7 @@ University or Company Name, City, Country.
 
 \address[B]{Department,
 University or Company Name, City, Country.
-\printead{e2,e3}}
+\printead{e2,e3,u1}}
 \end{aug}
 
 \begin{abstract}
@@ -87,7 +87,7 @@ your own.
 In French.
 \end{abstract}
 
-\begin{keyword}[class=MSC2020]
+\begin{keyword}[class=MSC]
 \kwd[Primary ]{00X00}
 \kwd{00X00}
 \kwd[; secondary ]{00X00}
