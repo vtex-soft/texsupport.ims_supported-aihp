@@ -17,7 +17,7 @@ The following files are given in the repository (or directly in `.zip` archive):
     of your document, proper tagging style, layout features, etc;
 -   `figure1.eps`, `figure1.pdf` - sample figures for `aihp-sample.pdf`;
 -   `aihp-sample.tex` - source file for the instructions paper `aihp-sample.pdf`;
--   `imsart-number.bst` - BibTeX style to prepare bibliography file.
+-   `spr-ims-number.bst` - BibTeX style to prepare bibliography file.
     More information can be found [here](http://www.bibtex.org/Using/) 
     or [here](https://www.latex-tutorial.com/tutorials/bibtex/).
 
